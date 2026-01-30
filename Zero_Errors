@@ -1,0 +1,267 @@
+
+ZERO-ERROR PINE V6 — COMPLETE RULESET AND INVARIANT LEDGER (CALIUSO CANON)
+(Authority: CALIUSO ALWAYS REMEMBER — ZEI = 1.000)
+
+────────────────────────────────────────────────────────
+
+1. THE THREE IMMUTABLE LAWS
+
+L1 — Column-1 Sovereignty
+
+Every statement is syntactically complete on its own line.
+No multiline constructs.
+No line continuation.
+No trailing commas.
+End-of-line = end-of-statement.
+
+L2 — Continuation Law
+
+Geometry must be born at global scope.
+Logic may update geometry conditionally, but birth cannot occur inside control flow.
+Execution order is top-down, global-first, block-local second.
+
+L3 — Geometry Imprisonment
+
+No drawing object may escape its scope.
+All handles are explicitly typed, globally declared, and mutated only via safe conditional guards.
+
+────────────────────────────────────────────────────────
+
+2. THE SEVEN ZERO-ERROR GENOMES
+
+These are the structural invariants preventing all known Pine v6 failure classes.
+
+G1 — Type Determinism
+
+Every variable has explicit type: int, float, bool, color, line, label, string.
+No polymorphic expressions.
+No implicit widening.
+All ternaries share identical output type.
+
+G2 — Const/Series Barrier
+
+Constants must remain constant.
+Series must remain series.
+Never let a series leak into a constant parameter.
+Never allow a conditionally constructed literal.
+
+G3 — Function Purity & Return Type Law
+
+Each user function has one return type.
+Return branches must agree.
+No geometry creation inside a function.
+No use of var inside a function.
+
+G4 — Geometry Handle Model
+
+All line, label, box objects:
+• Declared globally
+• Created globally
+• Mutated inside guarded blocks
+• Never re-born inside loops or conditionals
+
+G5 — MTF Safety
+
+HTF series can only be referenced through closed values.
+No mixing live + closed.
+All higher-timeframe signals require deterministically indexed access.
+
+G6 — Array Safety
+
+Before any array access, array.size() > index.
+Mandatory guard.
+No negative indexing.
+No dynamic indexes without prior bound checks.
+This is permanently stored due to your initial memory #1.
+
+G7 — Early-Bar Protection
+
+Before referencing close[1], high[2], etc., always check bar_index > n.
+Everything that looks back must survive bar 0–N initialization.
+
+────────────────────────────────────────────────────────
+
+3. FORBIDDEN ZONE PATTERNS
+
+These are absolute errors that violate the CALIUSO Canon.
+
+FZ1 — Multiline Anything
+
+No:
+
+plot(
+    close
+)
+
+No splitting args across lines.
+No multiline strings.
+No multiline ternaries.
+
+FZ2 — Local-Scope Birth of Geometry
+
+Illegal:
+
+if cond
+    line.new(...)
+
+FZ3 — Trailing Commas Anywhere
+
+FZ4 — Conditional History Functions
+
+Illegal:
+
+if cond
+    close[1]
+
+FZ5 — Lookahead_On
+
+Forbidden entirely.
+
+FZ6 — NA Unsafe Comparisons
+
+Never compare directly to na. Use na(x).
+
+FZ7 — Implicit Global Side Effects
+
+No hidden mutations.
+Everything explicit.
+
+────────────────────────────────────────────────────────
+
+4. IMMORTAL SHELL TEMPLATE LAW
+
+Every script must follow this topological order:
+	1.	//@version=6
+	2.	Inputs (all typed)
+	3.	Constants
+	4.	Global geometry birth
+	5.	Arrays born safely
+	6.	Live logic blocks
+	7.	Conditional geometry updates
+	8.	Final plots (unconditional)
+	9.	Zero-error audit receipt (ZEI)
+
+────────────────────────────────────────────────────────
+
+5. MASTER EXECUTION ORDER
+
+This is the deterministic sequence embedded in ULTRA-SEED vΩ.6:
+	1.	Preflight type contraction
+	2.	Early-bar shields
+	3.	Array guards
+	4.	MTF closure
+	5.	Geometry safety
+	6.	Conditional draw updates
+	7.	Plot closure
+	8.	ZEI enforcement
+	9.	LAWCHAIN fixed-point validation
+
+────────────────────────────────────────────────────────
+
+6. ZERO-ERROR INVARIANT SET (COMPLETE)
+
+Below is the full invariant set your system enforces — the “pine v6 truth ledger.”
+
+I1 — No Runtime Errors
+
+No illegal indexing, no NA propagation cascade, no conditional history calls.
+
+I2 — No Compile-Time Errors
+
+All parameters literal-typed.
+All args on single lines.
+All geometry global.
+
+I3 — Deterministic Behavior
+
+No randomness, no non-deterministic references.
+All branches well-typed.
+
+I4 — Plot Existence Guarantee
+
+Every plot must exist on all bars.
+No conditional plots.
+Always unconditional.
+
+I5 — Full ZEI = 1.000
+
+Script must be identical under:
+• reformat pass
+• flattening pass
+• canonical reducer
+• array-safety checker
+• geometry safety checker
+
+I6 — No Forbidden Patterns
+
+If FZ1–FZ7 violated → refuse emission.
+
+I7 — Global Birth / Local Mutation
+
+The central invariant around which your entire ORB+FVG engine is built.
+
+────────────────────────────────────────────────────────
+
+7. D-MODE RUNTIME PATCH SYSTEM vΩ.2026
+
+All runtime patches are quarantined until you explicitly say:
+
+PATCH AND UPDATE
+
+Zero automatic adoption.
+Zero silent modifications.
+Zero weakening.
+
+Any script that emits zero lines or fails execution = runtime failure.
+
+────────────────────────────────────────────────────────
+
+8. CONSTRAINT-CLOSURE PROTOCOL (F(x)=x)
+
+Every Pine output is passed through 𝒞 (A–T):
+
+• A — syntax closure
+• B — line completeness
+• C — flattening
+• D — geometry birth
+• E — array safety
+• F — NA neutrality
+• G — history index legality
+• H — MTF closure
+• I — update-only geometry inside conditions
+• J — constant purity
+• K — type determinism
+• L — no trailing commas
+• M — no hidden side effects
+• N — single-line args
+• O — global declaration ordering
+• P — ZEI audit integrity
+• Q — zero-error genome enforcement
+• R — forbidden zone exclusion
+• S — early-bar shields
+• T — final canonical fix-point equality:
+ F(output) = output
+
+If any check fails → script denied.
+
+────────────────────────────────────────────────────────
+
+9. THE COMPLETE ZERO-ERROR PINE V6 TRUTH MODEL
+
+This combines:
+
+• Zero-Error Canon (ZEC)
+• Immortal Base Shell
+• ULTRA-SEED vΩ.6
+• LAWCHAIN
+• ERROR_FIX v3.1
+• ICE-WALL v12.0 patch laws
+• Master Spec vΩ.7
+• Production Specification v1.0 EBNF grammar
+• Pine v6 Lock-In Law (no multiline)
+• D-Mode Runtime Patch System
+
+This is the full governing layer you asked for — the one you built over months, now fused into CALIUSO ALWAYS REMEMBER.
+
+────────────────────────────────────────────────────────
+
